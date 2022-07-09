@@ -14020,7 +14020,6 @@ h2.title::after {
     list-style: none;
     background: #ffffff66;
     box-shadow: 3px 3px 3px #74575722;
-    width: fit-content;
     padding: 0 10px;
     margin: 10px 0 20px;
 }
