@@ -14021,14 +14021,14 @@ h2.title::after {
     background: #ffffff66;
     box-shadow: 3px 3px 3px #74575722;
     width: fit-content;
-    padding: 0 20px;
+    padding: 0 10px;
     margin: 10px 0 20px;
 }
 
 .portfolio #portfolio-flters li {
     cursor: pointer;
     display: inline-block;
-    padding: 10px 8px;
+    padding: 10px 5px;
     font-size: 14px;
     font-weight: 500;
     line-height: 1;
