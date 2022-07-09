@@ -14040,7 +14040,7 @@ h2.title::after {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-    background: #745757aa;
+    background: #af9989;
     color: #fff;
 }
 
@@ -14118,7 +14118,7 @@ h2.title::after {
 }
 
 .contactTitle {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-bottom: 15px;
     width: fit-content;
     margin: 0 auto;
