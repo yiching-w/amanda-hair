@@ -177,7 +177,7 @@ AOS.init({
             }, true);
 
             portfolioIsotope.arrange({
-                filter: '.filter-wax'
+                filter: '.filter-western'
             });
         }
 
@@ -259,5 +259,19 @@ AOS.init({
             });
         } // End if
     });
+
+    var carousel = function() {
+		$('.carousel-testimony').owlCarousel({
+            autoplay: true,
+            speed: 200,
+			loop: true,
+			items:1,
+			margin: 30,
+			stagePadding: 0,
+			nav: false
+		});
+
+	};
+	carousel();
 
 })(jQuery);

@@ -11715,7 +11715,7 @@ body {
     line-height: 1.8;
     font-weight: 300;
     color: #745757;
-    background-color: #f6dfcf;
+    background-color: #fff1e6;
 }
 
 body.menu-show {
@@ -11995,11 +11995,11 @@ h5,
 .ftco-navbar-light .nav-link {
     padding-top: 0.9rem !important;
     padding-bottom: 0.9rem !important;
-    color: #d5d5d5 !important;
+    color: #775a51 !important;
 }
 
-.ftco-navbar-light.scrolled .nav-link.active {
-    color: #d9bf77 !important;
+.ftco-navbar-light.scrolled .nav-link {
+    color: #d5d5d5 !important;
 }
 
 .ftco-navbar-light.scrolled.awake {
@@ -12444,7 +12444,7 @@ h5,
 .services .icon {
     width: 100px;
     height: 100px;
-    background: #8e566099;
+    background: #fff1e6aa;
     margin: 0 auto;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -12464,7 +12464,7 @@ h5,
 .services .text h3 {
     font-size: 24px;
     font-weight: 400;
-    color: #f2e7dd;
+    color: #775a51;
     letter-spacing: 0.1rem;
 }
 
@@ -12734,31 +12734,6 @@ h5,
     background: #d9bf77;
 }
 
-.testimony-wrap {
-    display: block;
-    position: relative;
-    background: rgba(255, 255, 255, 0.1);
-    color: rgba(0, 0, 0, 0.8);
-}
-
-.testimony-wrap .user-img {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    position: relative;
-}
-
-.testimony-wrap .name {
-    font-weight: 500;
-    font-size: 18px;
-    margin-bottom: 0;
-    color: #000;
-}
-
-.testimony-wrap .position {
-    font-size: 13px;
-}
-
 .testimony-wrap .line {
     position: relative;
     border-left: 1px solid #e6e6e6;
@@ -12773,15 +12748,11 @@ h5,
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    background: #d9bf77;
+    background: #876d5aaa;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
-}
-
-.testimony-wrap .quote i {
-    color: #fff;
 }
 
 .ftco-social a {
@@ -13943,22 +13914,24 @@ textarea.form-control {
 }
 
 .aboutImage {
-    width: 70%;
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
 .aboutImage img {
     max-width: 100%;
     max-height: 100%;
+    object-fit: cover;
 }
 
-.aboutImage::after {
-    width: 100%;
-    height: 100%;
+.testimony-wrap::after {
+    width: 90%;
+    height: 90%;
     position: absolute;
-    background: #d0907577;
+    background: #b7977b52;
     top: 40px;
-    left: 30px;
+    left: 40px;
     content: '';
 }
 
@@ -13998,14 +13971,20 @@ textarea.form-control {
     position: relative;
     margin: 45px 0;
     padding: 150px 0;
-    background: linear-gradient(#e6bfa2aa, rgba(29, 36, 52, .5), #e6bfa2aa), url(../images/jarallax.jpg);
+    background: linear-gradient(#cda58199, #cda58155, #cda58199), url(../images/jarallax.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+@media (max-width: 768.98px) {
+    .jarallax {
+        background-position: 83% center;
+    }
+}
+
 .services {
-    background: #f0ceaa77;
+    background: #eceae840;
     padding: 40px 10px;
 }
 
@@ -14039,6 +14018,11 @@ h2.title::after {
 .portfolio #portfolio-flters {
     padding: 0;
     list-style: none;
+    background: #ffffff66;
+    box-shadow: 3px 3px 3px #74575722;
+    width: fit-content;
+    padding: 0 20px;
+    margin: 10px 0 20px;
 }
 
 .portfolio #portfolio-flters li {
@@ -14051,13 +14035,12 @@ h2.title::after {
     color: #444444;
     margin: 5px 2px;
     transition: all ease-in-out 0.3s;
-    background: #fafafc99;
     position: relative;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-    background: #b48a72aa;
+    background: #745757aa;
     color: #fff;
 }
 
@@ -14083,22 +14066,25 @@ h2.title::after {
 .serviceTitleImage {
     position: absolute;
     top: 40%;
-    transform: translateY(-50%);
-    left: 0;
+    transform: translateY(-50%) rotate(14deg);
+    right: 7px;
     z-index: -1;
     opacity: 0.5;
 }
 
 .serviceTitleImage img {
-    width: 300px;
+    width: 80%;
 }
 
-@media (max-width: 768.98px) {
+@media (max-width:578.98px) {
+    .serviceTitleImage {
+        transform: translateY(-50%) rotate(33deg);
+    }
+
     .serviceTitleImage img {
-        width: 200px;
+        width: 60%;
     }
 }
-
 
 /* Social Media Icons */
 .social-media-list {
@@ -14109,8 +14095,8 @@ h2.title::after {
 }
 
 .social-media-list li a {
-    color: #fff;
-    font-size: 25px;
+    color: #755954;
+    font-size: 35px;
 }
 
 .social-media-list li {
@@ -14118,58 +14104,37 @@ h2.title::after {
     top: 0;
     left: -20px;
     display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 50px;
-    margin: 10px auto;
-    border-radius: 50%;
-    color: #fff;
-    background-color: #755954;
     cursor: pointer;
     transition: all .2s ease-in-out;
-}
-
-.social-media-list li:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    opacity: 0;
-    box-shadow: 0 0 0 1px #fff;
-    transition: all .2s ease-in-out;
-    z-index: -1;
+    margin: 0 5px;
 }
 
 .social-media-list li:hover {
-    background-color: #fff;
-}
-
-.social-media-list li:hover:after {
-    opacity: 1;
-    transform: scale(1.12);
-    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+    transform: scale(1.2);
 }
 
 .social-media-list li:hover a {
     color: #755954;
 }
 
-h2.contactTitle {
-    border-bottom: 1px solid #745757;
+.contactTitle {
+    font-size: 2rem;
     padding-bottom: 15px;
     width: fit-content;
     margin: 0 auto;
+    position: relative;
+}
+
+.contactTitle div {
+    position: absolute;
+    bottom: -20px;
+    right: -40px;
 }
 
 .floatingButtonWrap {
     display: block;
     position: fixed;
-    bottom: 60px;
+    bottom: 17px;
     right: 15px;
     z-index: 999999999;
     transition: opacity 0.25s;
@@ -14217,7 +14182,6 @@ h2.contactTitle {
     position: absolute;
     bottom: 20px;
     right: 0px;
-    display: none;
 }
 
 .floatingMenu li {
@@ -14235,7 +14199,7 @@ h2.contactTitle {
     width: 33px;
     height: 33px;
     font-size: 1.1rem;
-    background: #9e716bdd;
+    background: #876d5aaa;
     color: #fff;
     border-radius: 50%;
     overflow: hidden;
@@ -14250,7 +14214,7 @@ h2.contactTitle {
 .scrollTop {
     position: fixed;
     display: none;
-    background-color: #9e716bdd;
+    background-color: #876d5aaa;
     width: 35px;
     height: 35px;
     align-items: center;
@@ -14317,5 +14281,16 @@ h2.contactTitle {
     100% {
         transform: translateY(20%) rotate(45deg);
         opacity: 0.7;
+    }
+}
+
+.heading-section img {
+    opacity: 0.7;
+    width: 300px;
+}
+
+@media (max-width: 578.98px) {
+    .heading-section img {
+        width: 200px;
     }
 }
