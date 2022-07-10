@@ -13992,16 +13992,7 @@ textarea.form-control {
     color: #f2e7dd;
     position: relative;
     margin-bottom: 30px;
-}
-
-h2.title::after {
-    content: '';
-    height: 0.5px;
-    max-width: 400px;
-    width: 50%;
-    background: #f2e7dd;
-    position: absolute;
-    top: 26px;
+    text-align: center;
 }
 
 @media (min-width: 769px) {
@@ -14019,7 +14010,6 @@ h2.title::after {
     padding: 0;
     list-style: none;
     background: #ffffff66;
-    box-shadow: 3px 3px 3px #74575722;
     padding: 0 20px;
     margin: 10px 0 20px;
 }
@@ -14302,4 +14292,11 @@ h2.title::after {
     .heading-section img {
         width: 200px;
     }
+}
+
+.contactWrap {
+    background-image: url(../images/13.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
